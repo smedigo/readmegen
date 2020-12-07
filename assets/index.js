@@ -27,7 +27,7 @@ const questions = await inquirer
             {
                 type: "input",
                 message: "What is the grading requirements?",
-                name: "grading requirements",
+                name: "grading",
             },
             {
                 type: "input",
@@ -45,7 +45,7 @@ const questions = await inquirer
         ])
 
         console.log(response);
-        const{} = response;
+        const{title, task, criteria, grading, license, contributors} = response;
             const html = 
 `
 
