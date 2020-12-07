@@ -4,7 +4,7 @@ const fs = require ("fs")
 // array of questions for user
 
 const generateFile = async() => {
-const questions = await inquirer 
+const response = await inquirer 
      
         .prompt([
             {
@@ -46,7 +46,7 @@ const questions = await inquirer
 
         console.log(response);
         const{title, task, criteria, grading, license, contributors} = response;
-            const html = 
+            const md = 
 `
 The README file title ${title},
 Your Task ${task},
