@@ -34,7 +34,7 @@ const questions = await inquirer
                 message: "What is the license?",
                 name: "license",
 
-            }
+            },
             {
                 type: "input",
                 message: "Who are the contributors to the project?",
@@ -48,11 +48,12 @@ const questions = await inquirer
         const{title, task, criteria, grading, license, contributors} = response;
             const html = 
 `
-
-
-
-
-
+The README file title ${title},
+Your Task ${task},
+Acceptance  criteria ${criteria},
+Grading requirements ${grading},
+License ${license},
+Contributors ${contributors},
 
 
 `;
